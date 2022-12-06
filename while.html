@@ -1,0 +1,11 @@
+<script>
+    let arrayNumerosAleatorios = []
+    let quantidadeNumerosAleatoriosAdicionados = 0
+
+    while(quantidadeNumerosAleatoriosAdicionados < 10){ //Limita o while até que o número chegue a 10
+        arrayNumerosAleatorios.push(Math.round(Math.random() * 10)) //Math.round arredonda os números / Math.random escolhe números aleatórios
+        quantidadeNumerosAleatoriosAdicionados += 1 //Adiciona +1 unidade a cada número aleatório
+    }
+
+    console.log(arrayNumerosAleatorios)
+</script>

@@ -1,0 +1,19 @@
+<script>
+    let arrayNumerosAleatorios = []
+    let contador = 0
+
+    function numerosAleatorios(){
+        if(contador < 10) {
+            arrayNumerosAleatorios.push(Math.round(Math.random() * 10))
+            contador += 1 //Itera o contador para que ele não comece com 0
+            return numerosAleatorios()
+        }        
+        return "Numeros gerados com sucesso!" //Após gerar todos os números e contador chegar a 10 essa frase é retornada
+    }
+        
+    console.log(numerosAleatorios())
+
+    console.log(arrayNumerosAleatorios)
+
+    arrayNumerosAleatorios.forEach((element, index) => console.log(`Elemento: ${element}, Index: ${index}`))
+</script>
